@@ -78,7 +78,7 @@
   padding: var(--basePadding);
   opacity: 0;
   transform: translateY(10px) scale(1);
-  background: #fff;
+  background: #141010;
 
   [aria-hidden="false"] & {
     animation: bouncyEntrance 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -111,7 +111,7 @@
   }
 
   .modalContent {
-    background: #fff;
+    background: #141010;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07),
       0 12px 32px 0 rgba(14, 30, 37, 0.1);
     border-radius: 8px;
@@ -246,7 +246,7 @@
   height: 24px;
   border-radius: 50%;
   margin: 6px;
-  background: #fff;
+  background: #141010;
   color: var(--subduedColor);
 }
 
@@ -271,17 +271,17 @@
 .btnHeader {
   font-size: 16px;
   line-height: 24px;
-  background: #fff;
+  background: #00c100;
   color: var(--subduedColor);
   border: 0;
-  border-bottom: 2px solid #e9ebeb;
+  border-bottom: 2px solid #00c918;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
 
 .btnHeader:focus,
 .btnHeader.active {
-  background: #fff;
+  background: #53c100;
   color: var(--baseColor);
   border-color: var(--baseColor);
   font-weight: 700;
@@ -308,7 +308,7 @@
   cursor: pointer;
   color: var(--baseColor);
   border: none;
-  border-bottom: 2px solid #e9ebeb;
+  border-bottom: 2px solid #00c918;
   border-radius: 0;
   background-color: inherit;
   transition: border-color 0.2s ease;
@@ -341,9 +341,9 @@
   height: 40px;
   margin: 0;
   padding: 6px 12px 6px 34px;
-  border: 2px solid #e9ebeb;
+  background-color: #141010;
+  border: 1px solid #434040;
   border-radius: 4px;
-  background: #fff;
   color: var(--baseColor);
   box-shadow: none;
   font-size: 14px;
@@ -387,7 +387,7 @@
 
 .hr {
   border: 0;
-  border-top: 2px solid #e9ebeb;
+  border-top: 2px solid #343434;
   margin: var(--basePadding) 0 -1px;
   text-align: center;
   overflow: visible;
@@ -518,5 +518,4 @@
   padding: 0;
   position: absolute;
   width: 1px;
-  #fff-space: nowrap;
 }
