@@ -17,13 +17,17 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
-    filename: "[name].js"
+    filename: "[name].[hash].js"
   },
 
   resolve: {
     extensions: [".jsx", ".js", ".json"]
   },
-
+  node: {
+    fs: 'empty',
+    tls: 'empty',
+    net: 'empty',
+  },
   module: {
     rules: [
       {
