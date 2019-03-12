@@ -270,7 +270,7 @@
 
 .btnClose:hover,
 .btnClose:focus {
-  background: #00c100;
+  background: #d64000;
   color: #fff;
 }
 
@@ -283,24 +283,24 @@
 .btnHeader {
   font-size: 16px;
   line-height: 24px;
-  background: #00c100;
+  background: #d64000;
   color: var(--subduedColor);
   border: 0;
-  border-bottom: 2px solid #00c918;
+  border-bottom: 2px solid #b73b06;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
 
 .btnHeader:focus,
 .btnHeader.active {
-  background: #53c100;
+  background: #b73b06;
   color: var(--baseColor);
   border-color: var(--baseColor);
   font-weight: 700;
 }
 
 .btnHeader:not(:only-child):hover {
-  background: #53c100;
+  background: #b73b06;
   color: var(--baseColor);
 }
 
@@ -320,7 +320,7 @@
   cursor: pointer;
   color: #fff;
   border: none;
-  border-bottom: 2px solid #00c918;
+  border-bottom: 2px solid #b73b06;
   border-radius: 0;
   background-color: inherit;
   transition: border-color 0.2s ease;

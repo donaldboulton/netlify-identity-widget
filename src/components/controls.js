@@ -1,5 +1,7 @@
 import { h, Component } from "preact";
 import { connect } from "mobx-preact";
+import signin from "./sign-in-alt.svg";
+import icon from "./icon.png";
 
 @connect(["store"])
 class Controls extends Component {
@@ -33,7 +35,7 @@ class Controls extends Component {
           href="#"
           onClick={this.handleButton}
         >
-          {this.props.text || (user ? "Log out" : "Log in")}
+          {this.props.image || (user ? "{{signin}}" : "{{signout}}")}
         </a>
       );
     }
