@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import { connect } from "mobx-preact";
-import signin from "./sign-in-alt.svg";
-import icon from "./icon.png";
+import login from "./img/sign-in-alt.svg";
+import logout from "./img/sign-out-alt.svg";
 
 @connect(["store"])
 class Controls extends Component {
@@ -31,11 +31,12 @@ class Controls extends Component {
     if (this.props.mode === "button") {
       return (
         <a
-          className="netlify-identity-button"
+          className="netlify-identity-button btn btnIcon"
           href="#"
           onClick={this.handleButton}
         >
-          {this.props.image || (user ? "{{signin}}" : "{{signout}}")}
+          {this.props.image ||
+            (user ? "<img src={login} />" : "<img src={logout} />")}
         </a>
       );
     }
@@ -55,7 +56,7 @@ class Controls extends Component {
               href="#"
               onClick={this.handleLogout}
             >
-              Log out
+              <img src={logout} className="btn btnIcon" alt="logout" />
             </a>
           </li>
         </ul>
@@ -79,7 +80,7 @@ class Controls extends Component {
             href="#"
             onClick={this.handleLogin}
           >
-            Log in
+            <img src={login} className="btn btnIcon" alt="login" />
           </a>
         </li>
       </ul>

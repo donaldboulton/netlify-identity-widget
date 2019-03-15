@@ -395,6 +395,7 @@
 }
 
 .formLabel {
+  color: #cccccc;
 }
 
 .hr {
@@ -413,7 +414,7 @@
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #d64000;
   color: var(--baseColor);
   padding: 4px;
   top: -11px;

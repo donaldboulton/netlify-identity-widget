@@ -1,5 +1,5 @@
 import { h, Component } from "preact";
-import icon from "./icon.png";
+import icon from "../img/icon.png";
 
 function formatError(error) {
   return (
