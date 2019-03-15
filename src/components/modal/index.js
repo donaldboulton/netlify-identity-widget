@@ -1,5 +1,4 @@
 import { h, Component } from "preact";
-import icon from "../img/icon.png";
 
 function formatError(error) {
   return (
@@ -49,7 +48,7 @@ export default class Modal extends Component {
           onClick={this.blockEvent}
         >
           <div className="modalContent">
-            <img src={icon} className="btn btnIcon" alt="Site Icon" />
+            <span className="btn btnIcon" alt="Site Icon" />
             <button onclick={this.handleClose} className="btn btnClose">
               <span className="visuallyHidden">Close</span>
             </button>
